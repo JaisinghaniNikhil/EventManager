@@ -1,0 +1,63 @@
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.in-home{
+    display: flex;
+    justify-content: space-between;
+    margin: -20px 30px 10px 30px;
+
+}
+.in-home h2{
+    font-size: 25px;
+}
+.in-home button{
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.event-list{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    gap: 10px;
+    width: 80%;
+    
+    
+    
+}
+.event-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #d4d7fe;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.event-card h3{
+    margin: 10px 30px 5px 30px;
+    font-size: 25px;
+}
+.event-card p{
+    margin: 0px 30px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.attendees{
+    display: flex;
+    margin: 10px 30px;
+    gap: 20px;
+}
+.attendees button{
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+}
+/* #d4d7fe */

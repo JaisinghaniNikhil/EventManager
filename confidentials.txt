@@ -1,0 +1,4 @@
+jaisinghaninikhil30
+3l7sA2a3GE5PBd9l
+
+mongodb+srv://jaisinghaninikhil30:3l7sA2a3GE5PBd9l@cluster0.uk9cx9c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

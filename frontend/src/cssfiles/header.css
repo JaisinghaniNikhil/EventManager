@@ -1,0 +1,54 @@
+.index{
+    padding: 20px 25px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: blue;
+    border-radius: 10px;
+    align-items: center;
+    height: 90px;
+    color: white;
+}
+.in-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    cursor:pointer
+}
+.in-header h3{
+    font-size: 23px;
+}
+.user-dropdown {
+  position: relative;
+}
+
+.user-greeting {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background-color: darkred;
+}
