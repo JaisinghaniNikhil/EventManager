@@ -35,7 +35,7 @@ function Signup() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5070/signup', {
+      const response = await axios.post('https://eventmanager-1-suhl.onrender.com/signup', {
         name:name,
         email: username,
         password: pass

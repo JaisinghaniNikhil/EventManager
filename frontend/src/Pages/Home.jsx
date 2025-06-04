@@ -24,7 +24,7 @@ function Home() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:5070/events');
+        const response = await axios.get('https://eventmanager-1-suhl.onrender.com/events');
         setEvents(response.data.events);
       } catch (error) {
         console.error('Error fetching events:', error);
@@ -44,7 +44,7 @@ function Home() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5070/events', eventData, {
+      const response = await axios.post('https://eventmanager-1-suhl.onrender.com/events', eventData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert('Event Created');
@@ -73,7 +73,7 @@ function Home() {
     }
 
     try {
-      await axios.post('http://localhost:5070/attendees/register', {
+      await axios.post('https://eventmanager-1-suhl.onrender.com/attendees/register', {
         name: registrationData.name,
         age: registrationData.age,
         eventId: selectedEventId
@@ -90,7 +90,7 @@ function Home() {
 
   const fetchAttendees = async (eventId, page = 1) => {
     try {
-      const response = await axios.get(`http://localhost:5070/attendees/event/${eventId}?page=${page}`);
+      const response = await axios.get(`https://eventmanager-1-suhl.onrender.com/attendees/event/${eventId}?page=${page}`);
       setAttendees(response.data.attendees);
       setTotalAttendeePages(response.data.totalPages || 1);
     } catch (err) {
